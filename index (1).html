@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Gimnasio de Boxeo — Cuenca</title>
+<meta property="og:title" content="Gimnasio de Boxeo en Cuenca — Tu opinión importa">
+<meta property="og:description" content="Participa en una breve encuesta y ayúdanos a traer el primer gimnasio de boxeo técnico a Cuenca. Solo 7 minutos.">
+<meta property="og:type" content="website">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f4f6fb;
+    color: #1a1a2e;
+    min-height: 100%;
+  }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #1d3a8a 0%, #2563eb 100%);
+    padding: 60px 24px 56px;
+    text-align: center;
+  }
+
+  .glove-icon {
+    font-size: 60px;
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  .hero h1 {
+    font-size: clamp(26px, 6vw, 42px);
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+  }
+
+  .hero h1 span {
+    color: #fbbf24;
+  }
+
+  .hero p {
+    font-size: clamp(15px, 3.5vw, 18px);
+    color: #dbeafe;
+    max-width: 520px;
+    margin: 0 auto 32px;
+    line-height: 1.65;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    background: #fbbf24;
+    color: #1a1a2e;
+    font-size: 17px;
+    font-weight: 800;
+    padding: 16px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    transition: transform 0.15s, box-shadow 0.15s;
+    box-shadow: 0 4px 20px rgba(251,191,36,0.4);
+  }
+
+  .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(251,191,36,0.5);
+  }
+
+  .time-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 7px 16px;
+    font-size: 13px;
+    color: #dbeafe;
+    margin-top: 16px;
+  }
+
+  /* CONTENIDO */
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 48px 20px 64px;
+  }
+
+  .section-label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #2563eb;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  /* CARDS */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 14px;
+    margin-bottom: 52px;
+  }
+
+  .card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 22px 16px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .card .icon { font-size: 34px; margin-bottom: 10px; display: block; }
+  .card .label { font-size: 14px; font-weight: 700; color: #1a1a2e; margin-bottom: 5px; }
+  .card .desc { font-size: 12px; color: #64748b; line-height: 1.55; }
+
+  /* ABOUT */
+  .about-box {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 28px 24px;
+    margin-bottom: 52px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .about-box p {
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.75;
+  }
+
+  .about-box p + p { margin-top: 12px; }
+  .about-box strong { color: #1a1a2e; }
+
+  /* CTA FINAL */
+  .cta-bottom {
+    background: linear-gradient(135deg, #1d3a8a 0%, #2563eb 100%);
+    border-radius: 20px;
+    padding: 40px 24px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(37,99,235,0.25);
+  }
+
+  .cta-bottom h2 {
+    font-size: clamp(20px, 5vw, 26px);
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 12px;
+  }
+
+  .cta-bottom p {
+    font-size: 15px;
+    color: #dbeafe;
+    margin-bottom: 28px;
+    line-height: 1.65;
+  }
+
+  .divider {
+    height: 1px;
+    background: #e2e8f0;
+    margin: 48px 0;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    padding: 24px 20px;
+    font-size: 12px;
+    color: #94a3b8;
+    border-top: 1px solid #e2e8f0;
+    background: #ffffff;
+    line-height: 1.8;
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <span class="glove-icon">🥊</span>
+  <h1>El boxeo llega a <span>Cuenca</span>.<br>¿Nos acompañas?</h1>
+  <p>Estamos diseñando un gimnasio de boxeo pensado para personas como tú. Tu opinión nos ayuda a hacerlo realidad.</p>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSccGlvG-R2_di2G3dTQp-PWsxS8gyTJlqggPx-rxTRXyDoaQQ/viewform" class="cta-btn" target="_blank">Responder encuesta</a>
+  <div class="time-badge">⏱ Solo 7 minutos</div>
+</div>
+
+<!-- CONTENIDO -->
+<div class="container">
+
+  <div class="section-label">¿Qué estamos construyendo?</div>
+  <div class="cards-grid">
+    <div class="card">
+      <span class="icon">🎯</span>
+      <div class="label">Técnica real</div>
+      <div class="desc">Aprende boxeo desde cero con un programa estructurado paso a paso</div>
+    </div>
+    <div class="card">
+      <span class="icon">📈</span>
+      <div class="label">Ve tu avance</div>
+      <div class="desc">Sabrás exactamente en qué etapa estás y qué te falta para progresar</div>
+    </div>
+    <div class="card">
+      <span class="icon">🤝</span>
+      <div class="label">Comunidad</div>
+      <div class="desc">Entrena con personas que comparten tus metas y tu ritmo</div>
+    </div>
+    <div class="card">
+      <span class="icon">💪</span>
+      <div class="label">Salud y bienestar</div>
+      <div class="desc">Mejora tu condición física, reduce el estrés y gana disciplina</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-label">Sobre este proyecto</div>
+  <div class="about-box">
+    <p>Este gimnasio es el proyecto de tesis de un estudiante de <strong>Ingeniería Industrial de la Universidad de Cuenca</strong>, practicante de boxeo, que quiere traer a la ciudad un espacio deportivo diferente.</p>
+    <p>La idea es simple: un lugar donde cualquier persona, sin importar su experiencia, pueda <strong>aprender boxeo de verdad</strong>, ver su progreso y sentirse parte de una comunidad.</p>
+    <p>Para hacerlo bien, necesitamos conocer tu opinión. La encuesta es <strong>anónima y confidencial</strong>, y sus resultados serán utilizados exclusivamente con fines académicos.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="cta-bottom">
+    <h2>Tu opinión construye este gimnasio 🥊</h2>
+    <p>Solo toma 7 minutos. No necesitas experiencia en boxeo ni en gimnasios para responder.</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSccGlvG-R2_di2G3dTQp-PWsxS8gyTJlqggPx-rxTRXyDoaQQ/viewform" class="cta-btn" target="_blank">Responder ahora</a>
+  </div>
+
+</div>
+
+<div class="footer">
+  Universidad de Cuenca · Facultad de Ciencias Químicas · Ingeniería Industrial<br>
+  Trabajo de titulación · 2026 · La información recopilada es anónima y de uso exclusivamente académico.
+</div>
+
+</body>
+</html>
